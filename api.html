@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data e Hora</title>
+</head>
+<body>
+  <h1>Data e Hora Atual</h1>
+  <p id="datetime">Carregando...</p>
+
+  <script>
+    async function fetchDateTime() {
+      const res = await fetch('http://localhost:3000/datetime');
+      const data = await res.json();
+      document.getElementById('datetime').textContent = `${data.date} ${data.time}`;
+    }
+
+    fetchDateTime();
+  </script>
+</body>
+</html>
