@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "main": "api.js",
   "scripts": {
-    "start": "node api.js"
-  }
-  
-  "scripts": {
+    "start": "node api.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,3 +16,4 @@
   "devDependencies": {},
   "description": ""
 }
+
